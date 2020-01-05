@@ -1,0 +1,5 @@
+services:
+    memo_syslog_bundle.hook_listener:
+        class: Memo\SyslogBundle\Service\HookListener
+    memo_syslog_bundle.syslog_manager:
+        class: Memo\SyslogBundle\Service\SyslogManager

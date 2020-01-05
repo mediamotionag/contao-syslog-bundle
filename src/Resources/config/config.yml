@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@SyslogBundle/Resources/config/services.yml" }

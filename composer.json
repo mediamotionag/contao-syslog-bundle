@@ -1,0 +1,48 @@
+{
+  "name": "mediamotionag/contao-syslog-bundle",
+  "homepage": "https://github.com/mediamotionag/contao-syslog-bundle",
+  "description":"Send errors (or all) log messages to a slack channel.",
+  "keywords":["contao", "contao4", "contao-bundle", "syslog", "logs", "errors", "slack"],
+  "type": "contao-bundle",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Media Motion AG",
+      "homepage": "https://www.mediamotion.ch/",
+      "role": "Developer"
+    }
+  ],
+  "support":{
+    "email":"ticket@memo.support",
+    "issues":"https://github.com/mediamotionag/contao-jwplayer-bundle/issues",
+    "source":"https://github.com/mediamotionag/contao-jwplayer-bundle"
+  },
+  "require": {
+    "php": ">=5.6.0",
+    "contao/core-bundle": "^4.4",
+    "alek13/slack": "^1.10"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "extra": {
+    "contao-manager-plugin": "Memo\\SyslogBundle\\ContaoManager\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "Memo\\SyslogBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/"
+    ]
+  }
+}
